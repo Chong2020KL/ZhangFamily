@@ -18,12 +18,11 @@ jobs:
           if event["pwd"] != os.environ["PASSWORD"]:
               exit(1)
           row = [
+              event["chineseName"],
               event["no"],
               event["father"],
               event["rank"],
-              event["chineseName"],
               event["generation"],
-              event["englishName"],
               event["wife"],
               event["sonCount"],
               event["photoLink"],
